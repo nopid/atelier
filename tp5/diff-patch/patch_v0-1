@@ -1,0 +1,18 @@
+1a2
+> random.seed()
+16c17
+<         print ''.join(masque), '--', essais, 'essay(s) resttant(s)' 
+---
+>         print ''.join(masque), '--', essais, 'essai(s) restant(s)' 
+20c21
+<                 c = raw_input("Letre (a-z ou ctrl+d pour kitter) ? ")
+---
+>                 c = raw_input("Lettre (a-z ou ctrl+d pour quitter) ? ")
+22c23
+<                 print "Fin de paaartye"
+---
+>                 print "Fin de partie"
+34c35
+<     print mot, '-- Predu...\n'
+---
+>     print mot, '-- Perdu...\n'

@@ -1,0 +1,12 @@
+38,40c38,44
+<     dico_systeme = open('/usr/share/dict/words','r')
+<     mots = dico_systeme.read().split()
+<     dico_systeme.close()
+---
+>     try:
+>         dico = open('./mots','r')
+>         mots = dico.read().split()
+>         dico.close()
+>     except IOError:
+>         print 'La liste de mots n\'existe pas !'
+>         sys.exit()    
